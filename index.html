@@ -55,11 +55,11 @@
         margin-bottom: 20px;
     }
     .profile img {
-        margin-right: 20px;
-        width: 150px; /* Adjusted width */
-        height: auto; /* Ensures aspect ratio is maintained */
-        border: 3px solid #2B2A4C;
-    }
+    margin-right: 20px;
+    width: 200px; /* Adjusted width */
+    height: auto; /* Ensures aspect ratio is maintained */
+    border: 3px solid #2B2A4C;
+}
     .profile-details {
         flex: 1;
     }
@@ -99,6 +99,13 @@
         padding: 10px 0;
         border-top: 1px solid #EEE2DE;
     }
+
+    .contact-links a {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between links */
+    color: #2B2A4C;
+    text-decoration: none;
+}
     .contact-info a {
         color: #B31312;
         text-decoration: none;
@@ -153,14 +160,17 @@
         </ul>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:beatriz.behr@ucdconnect.ie">Contact me at any time</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/beatrizgietner/" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/BeaGietner" target="_blank">GitHub Profile</a></p>
-        <p>Twitter: <a href="https://x.com/BeatrizGietner" target="_blank">Twitter Profile</a></p>
-        <p>Medium: <a href="https://bgietner.medium.com/" target="_blank">Medium Profile</a></p>
-    </section>
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-links">
+        <a href="mailto:beatriz.behr@ucdconnect.ie">Email</a>
+        <a href="https://www.linkedin.com/in/beatrizgietner/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/BeaGietner" target="_blank">GitHub</a>
+        <a href="https://x.com/BeatrizGietner" target="_blank">Twitter</a>
+        <a href="https://bgietner.medium.com/" target="_blank">Medium</a>
+    </div>
+</section>
+
 
     <div class="social-icons">
         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
