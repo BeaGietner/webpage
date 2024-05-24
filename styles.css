@@ -9,6 +9,13 @@ body {
     color: #4D869C;
 }
 
+.profile img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
 header {
     background-color: #EEF7FF;
     padding: 20px 0;
