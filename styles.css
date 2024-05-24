@@ -1,160 +1,158 @@
-        body {
-            font-family: 'Garamond', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #CDE8E5;
-            color: #4D869C;
-        }
+      body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CDCDB4;
+    color: black;
+}
 
-        header {
-            background-color: #EEF7FF;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 2px solid #7AB2B2;
-        }
+header {
+    background-color: #E8E8E8;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #A5A58D;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #4D869C;
-        }
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
 
-        nav {
-            margin: 0;
-            padding: 10px 0;
-            background-color: #EEF7FF;
-            text-align: center;
-            border-bottom: 1px solid #7AB2B2;
-        }
+nav {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #E8E8E8;
+    text-align: center;
+    border-bottom: 1px solid #A5A58D;
+}
 
-        nav a {
-            color: #4D869C;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: 700;
-        }
+nav a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
 
-        nav a:hover {
-            color: #227D51;
-        }
+nav a:hover {
+    color: #4D4D4D;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #EEF7FF;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E8E8E8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
-        .dropdown-content a {
-            color: #4D869C;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            color: #227D51;
-        }
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #4D4D4D;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-        .profile img {
-            margin-right: 20px;
-            width: 200px;
-            height: auto;
-            border: 3px solid #7AB2B2;
-        }
+.profile img {
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    border: 3px solid #A5A58D;
+}
 
-        .profile-details {
-            flex: 1;
-        }
+.profile-details {
+    flex: 1;
+}
 
-        .profile-details p {
-            margin: 5px 0;
-            color: #227D51;
-        }
+.profile-details p {
+    margin: 5px 0;
+    color: #4D4D4D;
+}
 
-        .profile-details h2 {
-            margin: 0;
-            color: #4D869C;
-        }
+.profile-details h2 {
+    margin: 0;
+    color: black;
+}
 
-        .section {
-            margin-bottom: 40px;
-        }
+.section {
+    margin-bottom: 40px;
+}
 
-        .section h2 {
-            border-bottom: 1px solid #4D869C;
-            padding-bottom: 10px;
-            color: #4D869C;
-        }
+.section h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    color: black;
+}
 
-        .contact-links a {
-            display: inline-block;
-            margin-right: 20px;
-            color: #4D869C;
-            text-decoration: none;
-            font-weight: 700;
-            font-family: 'Roboto', sans-serif;
-        }
+.contact-links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
 
-        .contact-links a:hover {
-            color: #227D51;
-        }
+.contact-links a:hover {
+    color: #4D4D4D;
+}
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-        .social-icons a {
-            margin: 0 10px;
-            color: #4D869C;
-            font-size: 20px;
-        }
+.social-icons a {
+    margin: 0 10px;
+    color: black;
+    font-size: 20px;
+}
 
-        .social-icons a:hover {
-            color: #B31312;
-        }
+.social-icons a:hover {
+    color: #B31312;
+}
 
-        footer {
-            background-color: white;
-            color: #4D869C;
-            text-align: center;
-            padding: 10px 0;
-            border-top: 1px solid #7AB2B2;
-        }
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #A5A58D;
+}
 
-        .contact-info a {
-            color: #B31312;
-            text-decoration: none;
-        }
-    
-
+.contact-info a {
+    color: #B31312;
+    text-decoration: none;
+}
