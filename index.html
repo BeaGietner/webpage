@@ -167,27 +167,10 @@
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Beatriz Gietner</h1>
-</header>
-
-<nav>
-    <a href="#about">Home</a>
-    <a href="#writing">Writing and collabs</a>
-    <a href="#CV">CV</a>
-    <a href="#teaching">Teaching</a>
-    <div class="dropdown">
-        <a href="#resources" class="dropbtn">Resources</a>
-        <div class="dropdown-content">
-            <a href="LearningResources.html">Learning Resources</a>
-            <a href="blogs.html">My friends' blogs</a>
-        </div>
-    </div>
-    <a href="#contact">Contact</a>
-</nav>
+ <div id="header-container"></div>
 
 <div class="container">
+
     <section id="about" class="section profile">
         <img src="headshot.jpeg" alt="Beatriz Gietner">
         <div class="profile-details">
@@ -233,14 +216,19 @@
         </div>
     </section>
 
-    <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
 </div>
 
 <footer>
     <p>&copy; 2024 Beatriz Gietner</p>
 </footer>
+
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        });
+</script>
 
 </body>
 </html>
