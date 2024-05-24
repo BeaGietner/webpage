@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a miracle? A short literature review on the economic determinants that shaped East Asia's growth in the 20th century</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        h1 {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+        #article-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header-container"></header>
+
+    <main>
+        
+        <h1 id="article-title">Making a miracle? A short literature review on the economic determinants that shaped East Asia's growth in the 20th century</h1>
+       
+        <div id="article-content">
+            <p>Introduction</p>
+            <p>In the literature, the scenario in which the four newly-industrializing countries (NICs) - or newly industrialized economies (NIEs) - of South Korea, Taiwan, Singapore, Hong Kong, and Japan experienced unmatched levels of economic growth is known as the East Asian miracle¹. The first time the expression was used to refer to a broad "Miracle" in East Asia was, at least in the West, in the article "Explaining the East Asian 'Miracle'" by McCord, published in 1989. From there, the World Bank published the controversial report "East Asian miracle: Economic growth and public policy" in 1993, which was followed by Krugman's critique on Foreign Affairs entitled "The myth of Asia's miracle"² and Kwon's rebuttal "The East Asia challenge to neoclassical orthodoxy"³, both published in 1994.</p>
+            <p>Before the 1990s decade, many works were published with the intention of explaining NICs' economic growth (Balassa, 1988; Chu, 1989; Deyo, 1987; Haggard, 1989; Rannis, 1989; White, 1988; White and Wade, 1989), but the literature increased considerably after 1990. In this literature review I will focus on the explanations for the East Asia Miracle presented in the following articles:</p>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
+    </footer>
+
+    <script>
+    
+        function toggleArticleContent() {
+            var articleContent = document.getElementById('article-content');
+            if (articleContent.style.display === 'none') {
+                articleContent.style.display = 'block';
+            } else {
+                articleContent.style.display = 'none';
+            }
+        }
+
+    
+        document.getElementById('article-title').addEventListener('click', toggleArticleContent);
+
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+            });
+    </script>
+</body>
+</html>
