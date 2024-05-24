@@ -11,19 +11,20 @@
    <header id="header-container"></header>
     <div class="container">
         <h1>CV</h1>
-        <p>You can download my CV <a href="cv.pdf" target="_blank">here</a>.</p>
+        <p>You can download my CV <a href="CV.pdf" target="_blank">here</a>.</p>
     </div>
     <footer>
         <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
     </footer>
     <script>
-
-    fetch('header.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('header-container').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error fetching header content:', error);
-        });
-</script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+            });
+    </script>
+</body>
+</html>
