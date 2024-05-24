@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Beatriz Gietner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header id="header-container"></header>
+    <div class="container">
+        <h2>Teaching</h2>
+        <ul>
+            <li><strong>Autumn 2020/21</strong> - ECON3022J - Industrial Economics (TA).</li>
+            <li><strong>Autumn 2020/21</strong> - ECON2004J - Game Theory (TA).</li>
+            <li><strong>Spring 2020/21</strong> - ECON10720 - Microeconomics for Business (TA).</li>
+            <li><strong>Autumn 2021/22</strong> - ECON10760 - Macroeconomics for Business (Tutor).</li>
+            <li><strong>Spring 2022/23</strong> - ECON20020 - Intermediate Macroeconomics (TA).</li>
+            <li><strong>Autumn 2023/24</strong> - ECON41820 - Econometrics (TA).</li>
+            <li><strong>Spring 2023/24</strong> - ECON30530 - Advanced Econometrics: Microeconometrics (TA).</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+            });
+    </script>
+</body>
+</html>
