@@ -1,8 +1,8 @@
-      body {
+body {
     font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
-    background-color: #CDCDB4;
+    background-color: #D3D3D3; /* Light Grey */
     color: black;
 }
 
@@ -10,7 +10,7 @@ header {
     background-color: #E8E8E8;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #A5A58D;
+    border-bottom: 2px solid #A5A5A5; /* Grey */
 }
 
 header h1 {
@@ -24,7 +24,7 @@ nav {
     padding: 10px 0;
     background-color: #E8E8E8;
     text-align: center;
-    border-bottom: 1px solid #A5A58D;
+    border-bottom: 1px solid #A5A5A5; /* Grey */
 }
 
 nav a {
@@ -88,7 +88,7 @@ nav a:hover {
     margin-right: 20px;
     width: 200px;
     height: auto;
-    border: 3px solid #A5A58D;
+    border: 3px solid #A5A5A5; /* Grey */
 }
 
 .profile-details {
@@ -140,7 +140,7 @@ nav a:hover {
     font-size: 20px;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     color: #B31312;
 }
 
@@ -149,7 +149,7 @@ footer {
     color: black;
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #A5A58D;
+    border-top: 1px solid #A5A5A5; /* Grey */
 }
 
 .contact-info a {
