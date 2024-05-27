@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources - Beatriz Gietner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<header id="header-container"></header>
+
+    <div class="container">            
+    <section id="rpylatex" class="section">
+        <h2>Blogs</h2>
+        <ul>
+            <li><a href="https://scholars-stage.org/" target="_blank">The Scholar's Stage, by Tanner Greer (China related)</a></li>
+            <li><a href="https://www.thefitzwilliam.com/" target="_blank">The Fitzwilliam, by Fergus and lots of other cool people (Ireland related)</a></li>
+           <li><a href="https://www.blueroofpolitics.com/" target="_blank">The Blue Roof (South Korea's politics)</a></li>
+          
+            
+          
+           
+
+        </ul>
+    </section>
+
+    <section id="econstats" class="section">
+        <h2>Newsletters (mostly all Econ/Science/Tech related)</h2>
+        <ul>
+            <li><a href="https://theovershoot.co/" target="_blank">The Overshot, by Matt Klein</a></li>
+            <li><a href="https://www.apricitas.io/" target="_blank">Apracitas, by Joseph Politano</a></li>
+           <li><a href="https://parentdata.org/" target="_blank">ParentData, by prof Emily Oster</a></li>
+            <li><a href="https://www.bloomberg.com/account/newsletters/money-stuff" target="_blank">Money Stuff, by Matt Levine</a></li>
+          <li><a href="https://www.construction-physics.com/" target="_blank">Construction Physics, by Brian Potter</a></li>
+          <li><a href="https://sabinehossenfelder.com/newsletter/" target="_blank">Prof Sabine Hossenfelder's weekly newsletter</a></li>
+          <li><a href=" https://www.piratewires.com/newsletters" target="_blank">Pirate Wires</a></li>
+         
+          
+          
+          
+          
+          
+        </ul>
+    </section>
+
+       </div>
+    <footer>
+        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
+    </footer>
+    <script>
+
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
+        });
+</script>
