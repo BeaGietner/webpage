@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
 
 body {
-    font-family: 'Nanum Myeongjo', serif; /* Primary font */
+    font-family: 'Nanum Myeongjo', serif;
     margin: 0;
     padding: 0;
-    background-color: #F3E8EB; /* Very Light Pink */
-    color: #433E49; /* Primary Dark Color */
+    background-color: #F3E8EB; 
+    color: #433E49; /
 }
 
 header {
-    background-color: #F3E8EB; /* Very Light Pink */
+    background-color: #F3E8EB; 
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #928490; /* Secondary Grey Color */
+    border-bottom: 2px solid #928490; 
 }
 
 header h1 {
     margin: 0;
     font-size: 36px;
-    color: #433E49; /* Primary Dark Color */
-    font-weight: 700; /* Bold weight for header */
+    color: #433E49;
+    font-weight: 700; 
 }
 
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #F3E8EB; /* Very Light Pink */
+    background-color: #F3E8EB; 
     text-align: center;
-    border-bottom: 1px solid #928490; /* Secondary Grey Color */
+    border-bottom: 1px solid #928490; 
 }
 
 nav a {
-    color: #5D4B61; /* Darker Purple Color */
+    color: #5D4B61; 
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    font-weight: 700; /* Bold weight for nav links */
+    font-weight: 700; 
 }
 
 nav a:hover {
-    color: #433E49; /* Primary Dark Color on hover */
+    color: #433E49; 
 }
 
 .dropdown {
@@ -50,22 +50,22 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F3E8EB; /* Very Light Pink */
+    background-color: #F3E8EB; 
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: #5D4B61; /* Darker Purple Color */
+    color: #5D4B61; 
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #DBC1AD; /* Light Beige Color */
-    color: #433E49; /* Primary Dark Color on hover */
+    background-color: #DBC1AD; 
+    color: #433E49; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -91,7 +91,7 @@ nav a:hover {
     margin-right: 20px;
     width: 200px;
     height: auto;
-    border: 3px solid #928490; /* Secondary Grey Color */
+    border: 3px solid #928490; 
 }
 
 .profile-details {
@@ -100,13 +100,13 @@ nav a:hover {
 
 .profile-details p {
     margin: 5px 0;
-    color: #928490; /* Secondary Grey Color */
+    color: #928490; 
 }
 
 .profile-details h2 {
     margin: 0;
-    color: #433E49; /* Primary Dark Color */
-    font-weight: 700; /* Bold weight for subheaders */
+    color: #433E49; 
+    font-weight: 700; 
 }
 
 .section {
@@ -114,23 +114,23 @@ nav a:hover {
 }
 
 .section h2 {
-    border-bottom: 1px solid #433E49; /* Primary Dark Color */
+    border-bottom: 1px solid #433E49; 
     padding-bottom: 10px;
-    color: #433E49; /* Primary Dark Color */
-    font-weight: 700; /* Bold weight for section headers */
+    color: #433E49; 
+    font-weight: 700; 
 }
 
 .contact-links a {
     display: inline-block;
     margin-right: 20px;
-    color: #5D4B61; /* Darker Purple Color */
+    color: #5D4B61;
     text-decoration: none;
-    font-weight: 700; /* Bold weight for contact links */
+    font-weight: 700; 
     font-family: 'Nanum Myeongjo', serif;
 }
 
 contact-links a:hover {
-    color: #433E49; /* Primary Dark Color on hover */
+    color: #433E49; 
 }
 
 .social-icons {
@@ -141,34 +141,33 @@ contact-links a:hover {
 
 .social-icons a {
     margin: 0 10px;
-    color: #928490; /* Secondary Grey Color */
+    color: #928490; 
     font-size: 20px;
 }
 
 social-icons a:hover {
-    color: #433E49; /* Primary Dark Color on hover */
+    color: #433E49; 
 }
 
 footer {
     background-color: white;
-    color: #433E49; /* Primary Dark Color */
+    color: #433E49;
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #928490; /* Secondary Grey Color */
+    border-top: 1px solid #928490; 
 }
 
 contact-info a {
-    color: #B31312; /* Keep specific color for contact info links */
+    color: #B31312; 
     text-decoration: none;
 }
 
-/* New addition for general links */
 a {
-    color: #5D4B61; /* Darker Purple Color */
-    text-decoration: none; /* Optional: remove underline */
+    color: #5D4B61; 
+    text-decoration: none; 
 }
 
 a:hover {
-    color: #433E49; /* Primary Dark Color on hover */
-    text-decoration: underline; /* Optional: underline on hover */
+    color: #433E49; 
+    text-decoration: underline; 
 }
