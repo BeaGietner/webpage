@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F3E8EB; 
-    color: #433E49; /
+    color: #433E49;
 }
 
 header {
@@ -120,6 +120,15 @@ nav a:hover {
     font-weight: 700; 
 }
 
+
+h2 {
+    font-size: 1.5em; 
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: 'Nanum Myeongjo', serif; 
+}
+
 .contact-links a {
     display: inline-block;
     margin-right: 20px;
@@ -129,7 +138,7 @@ nav a:hover {
     font-family: 'Nanum Myeongjo', serif;
 }
 
-contact-links a:hover {
+.contact-links a:hover {
     color: #433E49; 
 }
 
@@ -145,7 +154,7 @@ contact-links a:hover {
     font-size: 20px;
 }
 
-social-icons a:hover {
+.social-icons a:hover {
     color: #433E49; 
 }
 
@@ -157,7 +166,7 @@ footer {
     border-top: 1px solid #928490; 
 }
 
-contact-info a {
+.contact-info a {
     color: #B31312; 
     text-decoration: none;
 }
