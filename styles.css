@@ -2,34 +2,34 @@ body {
     font-family: 'Playfair Display', serif; /* Sleek serif font */
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA; /* Very Light Grey */
-    color: black;
+    background-color: #F3E8EB; /* Very Light Pink */
+    color: #433E49; /* Primary Dark Color */
 }
 
 header {
-    background-color: #F4F4F4;
+    background-color: #F3E8EB; /* Very Light Pink */
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #D1D1D1; /* Light Grey */
+    border-bottom: 2px solid #928490; /* Secondary Grey Color */
 }
 
 header h1 {
     margin: 0;
     font-size: 36px;
-    color: black;
+    color: #433E49; /* Primary Dark Color */
     font-weight: 400;
 }
 
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #F4F4F4;
+    background-color: #F3E8EB; /* Very Light Pink */
     text-align: center;
-    border-bottom: 1px solid #D1D1D1; /* Light Grey */
+    border-bottom: 1px solid #928490; /* Secondary Grey Color */
 }
 
 nav a {
-    color: black;
+    color: #928490; /* Secondary Grey Color */
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #707070;
+    color: #433E49; /* Primary Dark Color on hover */
 }
 
 .dropdown {
@@ -48,22 +48,22 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F4F4F4;
+    background-color: #F3E8EB; /* Very Light Pink */
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #928490; /* Secondary Grey Color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #EAEAEA;
-    color: #707070;
+    background-color: #DBC1AD; /* Light Beige Color */
+    color: #433E49; /* Primary Dark Color on hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,7 +89,7 @@ nav a:hover {
     margin-right: 20px;
     width: 200px;
     height: auto;
-    border: 3px solid #D1D1D1; /* Light Grey */
+    border: 3px solid #928490; /* Secondary Grey Color */
 }
 
 .profile-details {
@@ -98,12 +98,12 @@ nav a:hover {
 
 .profile-details p {
     margin: 5px 0;
-    color: #707070;
+    color: #928490; /* Secondary Grey Color */
 }
 
 .profile-details h2 {
     margin: 0;
-    color: black;
+    color: #433E49; /* Primary Dark Color */
     font-weight: 400;
 }
 
@@ -112,23 +112,23 @@ nav a:hover {
 }
 
 .section h2 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #433E49; /* Primary Dark Color */
     padding-bottom: 10px;
-    color: black;
+    color: #433E49; /* Primary Dark Color */
     font-weight: 400;
 }
 
 .contact-links a {
     display: inline-block;
     margin-right: 20px;
-    color: black;
+    color: #928490; /* Secondary Grey Color */
     text-decoration: none;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
 }
 
 .contact-links a:hover {
-    color: #707070;
+    color: #433E49; /* Primary Dark Color on hover */
 }
 
 .social-icons {
@@ -139,23 +139,34 @@ nav a:hover {
 
 .social-icons a {
     margin: 0 10px;
-    color: black;
+    color: #928490; /* Secondary Grey Color */
     font-size: 20px;
 }
 
 .social-icons a:hover {
-    color: #B31312;
+    color: #433E49; /* Primary Dark Color on hover */
 }
 
 footer {
     background-color: white;
-    color: black;
+    color: #433E49; /* Primary Dark Color */
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #D1D1D1; /* Light Grey */
+    border-top: 1px solid #928490; /* Secondary Grey Color */
 }
 
 .contact-info a {
-    color: #B31312;
+    color: #B31312; /* Keep specific color for contact info links */
     text-decoration: none;
+}
+
+/* New addition for general links */
+a {
+    color: #928490; /* Secondary Grey Color */
+    text-decoration: none; /* Optional: remove underline */
+}
+
+a:hover {
+    color: #433E49; /* Primary Dark Color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
 }
