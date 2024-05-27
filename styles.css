@@ -21,18 +21,22 @@ header h1 {
 }
 
 nav {
-    margin: 0;
-    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
     background-color: #F3E8EB; /* Very Light Pink */
+    border-right: 1px solid #928490; /* Secondary Grey Color */
+    padding-top: 20px;
     text-align: center;
-    border-bottom: 1px solid #928490; /* Secondary Grey Color */
 }
 
 nav a {
+    display: block;
     color: #928490; /* Secondary Grey Color */
     padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
     font-weight: 400;
 }
 
@@ -42,12 +46,13 @@ nav a:hover {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 200px; /* Adjust position relative to nav */
     background-color: #F3E8EB; /* Very Light Pink */
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -72,8 +77,8 @@ nav a:hover {
 
 .container {
     padding: 20px;
-    max-width: 900px;
-    margin: 20px auto;
+    margin: 20px 0 20px 220px; /* Adjust margin to account for fixed nav */
+    max-width: calc(100% - 220px); /* Adjust width to account for fixed nav */
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
