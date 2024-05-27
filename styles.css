@@ -163,11 +163,11 @@ contact-info a {
 }
 
 a {
-    color: #5D4B61; 
-    text-decoration: none; 
+    color: #B31312;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: #433E49; 
-    text-decoration: underline; 
+    color: #B31312;
+    text-decoration: underline;
 }
