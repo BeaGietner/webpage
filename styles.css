@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+
 body {
-    font-family: 'Playfair Display', serif; /* Sleek serif font */
+    font-family: 'Nanum Myeongjo', serif; /* Primary font */
     margin: 0;
     padding: 0;
     background-color: #F3E8EB; /* Very Light Pink */
@@ -17,27 +19,23 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: #433E49; /* Primary Dark Color */
-    font-weight: 400;
+    font-weight: 700; /* Bold weight for header */
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
+    margin: 0;
+    padding: 10px 0;
     background-color: #F3E8EB; /* Very Light Pink */
-    border-right: 1px solid #928490; /* Secondary Grey Color */
-    padding-top: 20px;
     text-align: center;
+    border-bottom: 1px solid #928490; /* Secondary Grey Color */
 }
 
 nav a {
-    display: block;
-    color: #928490; /* Secondary Grey Color */
+    color: #5D4B61; /* Darker Purple Color */
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: 400;
+    display: inline-block;
+    font-weight: 700; /* Bold weight for nav links */
 }
 
 nav a:hover {
@@ -46,13 +44,12 @@ nav a:hover {
 
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 200px; /* Adjust position relative to nav */
     background-color: #F3E8EB; /* Very Light Pink */
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -60,7 +57,7 @@ nav a:hover {
 }
 
 .dropdown-content a {
-    color: #928490; /* Secondary Grey Color */
+    color: #5D4B61; /* Darker Purple Color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -77,8 +74,8 @@ nav a:hover {
 
 .container {
     padding: 20px;
-    margin: 20px 0 20px 220px; /* Adjust margin to account for fixed nav */
-    max-width: calc(100% - 220px); /* Adjust width to account for fixed nav */
+    max-width: 900px;
+    margin: 20px auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -109,7 +106,7 @@ nav a:hover {
 .profile-details h2 {
     margin: 0;
     color: #433E49; /* Primary Dark Color */
-    font-weight: 400;
+    font-weight: 700; /* Bold weight for subheaders */
 }
 
 .section {
@@ -120,19 +117,19 @@ nav a:hover {
     border-bottom: 1px solid #433E49; /* Primary Dark Color */
     padding-bottom: 10px;
     color: #433E49; /* Primary Dark Color */
-    font-weight: 400;
+    font-weight: 700; /* Bold weight for section headers */
 }
 
 .contact-links a {
     display: inline-block;
     margin-right: 20px;
-    color: #928490; /* Secondary Grey Color */
+    color: #5D4B61; /* Darker Purple Color */
     text-decoration: none;
-    font-weight: 400;
-    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Bold weight for contact links */
+    font-family: 'Nanum Myeongjo', serif;
 }
 
-.contact-links a:hover {
+contact-links a:hover {
     color: #433E49; /* Primary Dark Color on hover */
 }
 
@@ -148,7 +145,7 @@ nav a:hover {
     font-size: 20px;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     color: #433E49; /* Primary Dark Color on hover */
 }
 
@@ -160,14 +157,14 @@ footer {
     border-top: 1px solid #928490; /* Secondary Grey Color */
 }
 
-.contact-info a {
+contact-info a {
     color: #B31312; /* Keep specific color for contact info links */
     text-decoration: none;
 }
 
 /* New addition for general links */
 a {
-    color: #928490; /* Secondary Grey Color */
+    color: #5D4B61; /* Darker Purple Color */
     text-decoration: none; /* Optional: remove underline */
 }
 
