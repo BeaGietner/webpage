@@ -25,22 +25,23 @@ header h1 {
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #F3E8EB; 
+    background-color: #F9EDED; 
     text-align: center;
     border-bottom: 1px solid #928490; 
 }
 
 nav a {
-    color: #5D4B61; 
+    color: #5D4B61;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-     font-weight: bold;
+    font-weight: bold;
 }
 
 nav a:hover {
     color: #433E49; 
 }
+
 
 .dropdown {
     position: relative;
