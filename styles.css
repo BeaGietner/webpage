@@ -4,42 +4,42 @@ body {
     font-family: 'Nanum Myeongjo', serif;
     margin: 0;
     padding: 0;
-    background-color: #D1D0CE; /* Darker Background */
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    background-color: #F3E8EB; 
+    color: #433E49;
 }
 
 header {
-    background-color: #DBD7D2; /* Header Background */
+    background-color: #F3E8EB; 
     padding: 20px 0;
     text-align: center;
-    border-bottom: 1px solid #ACACAC; /* Header Border */
+    border-bottom: 1px solid #928490; 
 }
 
 header h1 {
     margin: 0;
     font-size: 36px;
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49;
     font-weight: 700; 
 }
 
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #DBD7D2; /* Header Background */
+    background-color: #F3E8EB; 
     text-align: center;
-    border-bottom: 1px solid #ACACAC; /* Header Border */
+    border-bottom: 1px solid #928490; 
 }
 
 nav a {
-    color: #657383; /* Links in Header */
+    color: #5D4B61; 
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    font-weight: bold;
+     font-weight: bold;
 }
 
 nav a:hover {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49; 
 }
 
 .dropdown {
@@ -50,23 +50,25 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F2F2F2; /* Light Gray */
+    background-color: #F3E8EB; 
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    
+    
 }
 
 .dropdown-content a {
-    color: #657383; /* Links in Dropdown */
+    color: #5D4B61; 
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .dropdown-content a:hover {
-    background-color: #ACACAC; /* Hover Background in Dropdown */
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    background-color: #DBC1AD; 
+    color: #433E49; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -80,7 +82,7 @@ nav a:hover {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    border: 1px solid #ACACAC; /* Container Border */
+    border: 1px solid #928490; 
 }
 
 .profile {
@@ -93,7 +95,7 @@ nav a:hover {
     margin-right: 20px;
     width: 200px;
     height: auto;
-    border: 3px solid #ACACAC; /* Profile Image Border */
+    border: 3px solid #928490; 
 }
 
 .profile-details {
@@ -102,12 +104,12 @@ nav a:hover {
 
 .profile-details p {
     margin: 5px 0;
-    color: #4A5767; /* Dark Grayish Blue */
+    color: #928490; 
 }
 
 .profile-details h2 {
     margin: 0;
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49; 
     font-weight: 700; 
 }
 
@@ -116,9 +118,9 @@ nav a:hover {
 }
 
 .section h2 {
-    border-bottom: 1px solid #2F3B4C; /* Very Dark Grayish Blue */
+    border-bottom: 1px solid #433E49; 
     padding-bottom: 10px;
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49; 
     font-weight: 700; 
 }
 
@@ -133,14 +135,14 @@ h2 {
 .contact-links a {
     display: inline-block;
     margin-right: 20px;
-    color: #657383; /* Contact Links */
+    color: #5D4B61;
     text-decoration: none;
     font-weight: 700; 
     font-family: 'Nanum Myeongjo', serif;
 }
 
 .contact-links a:hover {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49; 
 }
 
 .social-icons {
@@ -151,35 +153,34 @@ h2 {
 
 .social-icons a {
     margin: 0 10px;
-    color: #6A7B8A; /* Grayish Blue */
+    color: #928490; 
     font-size: 20px;
 }
 
-.social-icons a:hover {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+social-icons a:hover {
+    color: #433E49; 
 }
 
 footer {
     background-color: white;
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #433E49;
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #ACACAC; /* Footer Border */
-    border: 1px solid #ACACAC; /* Footer Border */
+    border-top: 1px solid #928490; 
+    border: 1px solid #928490; 
 }
 
 .contact-info a {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #B31312; 
     text-decoration: none;
 }
 
 a {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #B31312;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #2F3B4C; /* Very Dark Grayish Blue */
+    color: #B31312;
     text-decoration: underline;
 }
-
