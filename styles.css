@@ -9,10 +9,10 @@ body {
 }
 
 header {
-    background-color: #FDE4E4; /* Lighter pink */
+    background-color: #FDE4E4; 
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #928490; /* Added top border */
+    border-top: 1px solid #928490;
     border-bottom: 1px solid #928490;
 }
 
@@ -26,7 +26,7 @@ header h1 {
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #FDE4E4; /* Lighter pink */
+    background-color: #FDE4E4; 
     text-align: center;
     border-bottom: 1px solid #928490; 
 }
