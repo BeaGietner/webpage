@@ -9,10 +9,11 @@ body {
 }
 
 header {
-    background-color: #FDE4E4; 
+    background-color: #FDE4E4; /* Lighter pink */
     padding: 20px 0;
     text-align: center;
-    border-bottom: 1px solid #928490; 
+    border-top: 1px solid #928490; /* Added top border */
+    border-bottom: 1px solid #928490;
 }
 
 header h1 {
@@ -25,7 +26,7 @@ header h1 {
 nav {
     margin: 0;
     padding: 10px 0;
-    background-color: #F9EDED; 
+    background-color: #FDE4E4; /* Lighter pink */
     text-align: center;
     border-bottom: 1px solid #928490; 
 }
@@ -42,7 +43,6 @@ nav a:hover {
     color: #433E49; 
 }
 
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -55,8 +55,6 @@ nav a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    
-    
 }
 
 .dropdown-content a {
@@ -64,7 +62,7 @@ nav a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .dropdown-content a:hover {
@@ -159,7 +157,7 @@ h2 {
     font-size: 20px;
 }
 
-social-icons a:hover {
+.social-icons a:hover {
     color: #433E49; 
 }
 
@@ -186,3 +184,4 @@ a:hover {
     color: #B31312;
     text-decoration: underline;
 }
+
