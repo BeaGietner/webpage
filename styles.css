@@ -32,11 +32,15 @@ nav {
 }
 
 nav a {
-  color: #433E49;
+  color: #5D4B61;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
+}
+
+nav a:hover {
+  color: #433E49;
 }
 
 .dropdown {
@@ -71,7 +75,7 @@ nav a {
   max-width: 900px;
   margin: 20px auto;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba{0, 0, 0, 0.05};
   border-radius: 10px;
   border: 1px solid #928490;
 }
@@ -127,10 +131,14 @@ h2 {
 .contact-links a {
   display: inline-block;
   margin-right: 20px;
-  color: #433E49;
+  color: #5D4B61;
   text-decoration: none;
   font-weight: 700;
   font-family: 'Nanum Myeongjo', serif;
+}
+
+.contact-links a:hover {
+  color: #433E49;
 }
 
 .social-icons {
@@ -141,8 +149,12 @@ h2 {
 
 .social-icons a {
   margin: 0 10px;
-  color: #433E49;
+  color: #928490;
   font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #433E49;
 }
 
 footer {
@@ -160,6 +172,11 @@ footer {
 }
 
 a {
+  color: #B31312;
+  text-decoration: underline;
+}
+
+a:hover {
   color: #B31312;
   text-decoration: underline;
 }
