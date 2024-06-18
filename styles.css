@@ -81,6 +81,16 @@ nav a:hover {
   border: 1px solid #928490;
 }
 
+.container a {
+  color: #5D4B61;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+.container a:hover {
+  color: #433E49;
+}
+
 .profile {
   display: flex;
   align-items: center;
