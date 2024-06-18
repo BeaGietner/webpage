@@ -40,8 +40,8 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline; /* Add underline on hover */
-  font-weight: bold; /* Maintain bold font weight on hover */
+  text-decoration: underline; 
+  font-weight: bold; 
 }
 
 .dropdown {
@@ -82,13 +82,13 @@ nav a:hover {
 }
 
 .container a {
-  color: #5D4B61;
+  color: ##B31312;
   text-decoration: none;
   font-weight: bold; 
 }
 
 .container a:hover {
-  color: #433E49;
+  color: #B31312;
 }
 
 .profile {
