@@ -89,6 +89,7 @@ nav a:hover {
 
 .container a:hover {
   color: #B31312;
+  text-decoration: underline;
 }
 
 .profile {
