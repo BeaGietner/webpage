@@ -40,7 +40,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #433E49;
+  text-decoration: underline; /* Add underline on hover */
+  font-weight: bold; /* Maintain bold font weight on hover */
 }
 
 .dropdown {
@@ -133,7 +134,7 @@ h2 {
   margin-right: 20px;
   color: #5D4B61;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
   font-family: 'Nanum Myeongjo', serif;
 }
 
@@ -157,17 +158,6 @@ h2 {
   color: #433E49;
 }
 
-.main-content a {
-  color: #B31312;
-  text-decoration: none; 
-  font-weight: bold; 
-}
-
-.main-content a:hover {
-  text-decoration: none;
-  font-weight: bold; 
-}
-
 footer {
   background-color: white;
   color: #433E49;
@@ -184,11 +174,10 @@ footer {
 
 a {
   color: #B31312;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: #B31312;
-  text-decoration: underline;
+  text-decoration: none; 
 }
-
