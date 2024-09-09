@@ -192,3 +192,103 @@ a:hover {
   color: #B31312;
   text-decoration: none; 
 }
+
+/* Blog Styles */
+#blog {
+  margin-top: 40px;
+}
+
+#blog article {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #928490;
+}
+
+#blog article:last-child {
+  border-bottom: none;
+}
+
+#blog h3 {
+  font-size: 1.3em;
+  color: #433E49;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#blog .date {
+  font-style: italic;
+  color: #928490;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+#blog .content {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+#blog .read-more {
+  display: inline-block;
+  color: #B31312;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#blog .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Pagination styles (if needed) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination a {
+  margin: 0 10px;
+  color: #5D4B61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  color: #433E49;
+  text-decoration: underline;
+}
+
+/* Individual blog post page styles */
+.blog-post {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-post h1 {
+  font-size: 2em;
+  color: #433E49;
+  margin-bottom: 10px;
+}
+
+.blog-post .date {
+  font-style: italic;
+  color: #928490;
+  margin-bottom: 20px;
+}
+
+.blog-post .content {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.blog-post .back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #B31312;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-post .back-link:hover {
+  text-decoration: underline;
+}
