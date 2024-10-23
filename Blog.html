@@ -9,18 +9,51 @@
 </head>
 <body>
 <header id="header-container"></header>
-
     <div class="container">
         <h1>Blog</h1>
         <div id="blog-posts">
-          
+            <article class="blog-post">
+                <header class="post-header">
+                    <h2 class="post-title">Progress Studies: Reflections from Berkeley</h2>
+                    <div class="post-meta">
+                        <time datetime="2024-10-23">October 23, 2024</time>
+                        <span class="post-author">By Beatriz Gietner</span>
+                    </div>
+                </header>
+                
+                <div class="post-content">
+                                      
+                    <p>When Economics Professor <a href="https://www.tylertcowen.com/" target="_blank">Tyler Cowen</a> and Stripe founder <a href="https://patrickcollison.com/" target="_blank">Patrick Collison</a> proposed the creation of a new field of study, named "Progress Studies", in an article for The Atlantic in 2019 entitled "<a href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/" target="_blank">We Need a New Science of Progress</a>", the world was different.</p>
+
+                    <p>We were unknowingly about to enter a very dark and twisted couple of years where uncertainty was certain and we feared for both our present and future. We emerged relatively unscathed, thanks to emergency measures that combined government permissiveness with private sector leadership, clearing the path to much-needed scientific acceleration.</p>
+
+                    <h3>A Journey to Berkeley</h3>
+                    <p>I live in Europe, in Dublin more specifically, and we here are bombarded daily by statistics which tell a story about stagnation, risk aversion, fear mongering, cultural decay, "the vibes are off", the world is going to end and there is nothing we can do about it, basically. But sometimes there is light and I happen to see a tweet that restores my faith in humanity.</p>
+                   
+                    <h3>The Conference Experience</h3>
+                    <p>Being in San Francisco was an experience in itself. California is an odd state, by all measures, and it can be a shock seeing self-driving Waymos making their way through streets flooded with drug-users in broad daylight. Worth remembering that while dystopian, the former reflects a market success and the latter a governmental failure.</p>
+
+                    <h3>Insights</h3>
+                    <p>Opening remarks were delivered by both <a href="https://rootsofprogress.org/about" target="_blank">Roots of Progress Institute's founder and president Jason Crawford</a>, and Harvard psychology Professor <a href="https://stevenpinker.com/" target="_blank">Steven Pinker</a>, who brought roughly 20 charts that illustrated that we are likely to be living during the most advanced time in human history.</p>
+
+                    <h3>The Path Forward</h3>
+                    <p>Imagined if all the cookies we needed to worry about were the ones we can eat, drone-delivered to our doors? Expectations are high and the Brussels is far away, so if you would like to help us get this continent up to speed in terms of better, more prosperous, living standards and at the frontier of progress, get in touch. Let us shift the vibes and make Europe “progresspilled” by having our own European Institute for Progress. There is a great quote by American cultural anthropologist Margaret Mead that goes “never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.” Now imagine what a great group of thoughtful and committed citizens would be able to accomplish. Anon, let us make the “numbers go up” and leave the idea of degrowth in the past. </p> </div>
+
+                <footer class="post-footer">
+                    <div class="post-tags">
+                        <span class="tag">Progress Studies</span>
+                        <span class="tag">Technology</span>
+                        <span class="tag">Innovation</span>
+                        <span class="tag">Berkeley</span>
+                    </div>
+                </footer>
+            </article>
         </div>
-     </div>
+    </div>
     <footer>
         <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
     </footer>
     <script>
-
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
@@ -29,4 +62,6 @@
         .catch(error => {
             console.error('Error fetching header content:', error);
         });
-</script>
+    </script>
+</body>
+</html>
