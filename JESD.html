@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Beatriz Gietner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+   <header id="header-container"></header>
+    <div class="container">
+        <h2>Japanese Education Statistics Dataset</h2>
+<p>I maintain a reposity on <a href="https://github.com/BeaGietner/JapanEdStats" target="_blank">Github</a> which contains an Educational Dataset for Japan (2005-2022) and an explanation of the 
+  variables in it. The dataset includes metrics such as the number of junior colleges and universities per 100,000 persons, entrance capacity indexes for junior colleges and universities, ratios of students in national, public, and private institutions, per-student education expenditures across different school types.
+  The data covers all education levels, from kindergarten to college, and includes all prefectures in Japan. It allows for regional and temporal analysis of trends in educational policy, resource allocation, and institutional capacity. These metrics can be used to study changes in Japan’s educational landscape, including shifts between public and private education and investments in school resources over time. 
+  It is free to use and I welcome suggestions for improvement. You can clone the repository in full and use it at your will, but you have to credit e-Stat, Statistics of Japan (a portal site for Japanese Government Statistics. More information on fair-use can be found in the Read.me file.</p>
+        <footer>
+        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+            });
+    </script>
+</body>
+</html>
