@@ -26,18 +26,19 @@
         <h3>Financial Aid, Educational Choice, and Student Outcomes During the Great Recession</h3>
 </div>
 
-        <footer>
-        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
-    </footer>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error fetching header content:', error);
-            });
-    </script>
+<footer>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
+        });
+</script>
 </body>
 </html>
