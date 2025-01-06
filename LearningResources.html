@@ -163,11 +163,12 @@
     </section>
         
        </div>
-    <footer>
-        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
-    </footer>
-    <script>
 
+    <footer>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
@@ -177,3 +178,5 @@
             console.error('Error fetching header content:', error);
         });
 </script>
+</body>
+</html>
