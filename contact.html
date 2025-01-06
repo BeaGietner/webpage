@@ -13,18 +13,19 @@
         <h3>Contact</h3>
         <p>I am a cronically online person, so you can find me anywhere, mostly at anytime. E-mail me at b[dot]gietner[at]gmail[dot]com (I answer during office hours unless *URGENT* stated), and send a tweet <a href="https://x.com/BeatrizGietner" target="_blank">here</a> whenever. You can also message me on Slack <a href="https://app.slack.com/client/T077UCRJ068/C077K9K8P38" target="_blank">here</a>.</p>
    </div>
-    <footer>
-        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
-    </footer>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error fetching header content:', error);
-            });
-    </script>
+<footer>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
+        });
+</script>
 </body>
 </html>
