@@ -26,18 +26,21 @@ of Wave-Particle Duality.</h3>
         <h3>Building a K-Community: Idol stars challenging foreign fans to learn Korean traditions</h3>
         <p>My fascination with Chinese and Korean cultures led me to assist Professor Saeji from Pusan University in Korea. I translated her research materials into Portuguese and assisted with data analysis for her paper, which can be found <a href="https://newcms.kmu.ac.kr/dext5editordata/2022/12/20221215_110549903_83633.pdf" target="_blank">here</a>.</p>
     </div>
+
     <footer>
-        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
-    </footer>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error fetching header content:', error);
-            });
-    </script>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
+        });
+</script>
 </body>
 </html>
+
