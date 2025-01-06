@@ -21,28 +21,19 @@
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Beatriz Gietner. All rights reserved.</p>
-    </footer>
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(html => {
-                    document.getElementById('header-container').innerHTML = html;
-                })
-                .catch(error => {
-                    console.error('Error loading header:', error);
-                    document.getElementById('header-container').innerHTML = '<p>Error loading header</p>';
-                });
+<footer>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
         });
-    </script>
+</script>
 </body>
 </html>
