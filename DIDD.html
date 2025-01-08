@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiD Digest Newsletter - Beatriz Gietner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<header id="header-container"></header>
+<div class="container">
+    <h2>DiD Digest</h2>
+    <p>I have a newsletter focusing on <em>difference-in-differences</em> (DiD) methodology where I try to keep you up to date on the newest literature development (working papers, a new package, or a useful thread).</p>
+    <p>Whether you're an economist in training, policymaker, or just curious about DiD, you'll find something valuable there.</p>
+    <p>You can check it out (and subscribe to it) on Substack:</p>
+    <a href="https://diddigest.substack.com/" target="_blank" rel="noopener noreferrer" class="btn">Visit DiD Digest on Substack</a>
+</div>
+<footer>
+    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching header content:', error);
+        });
+</script>
+</body>
+</html>
