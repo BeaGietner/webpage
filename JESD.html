@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Japanese Education Statistics Dataset (2005-2022) includes metrics for all education levels and prefectures in Japan. Explore trends in education policy and resources.">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Japanese Education Statistics Dataset</title>
 </head>
 <body>
     <header id="header-container"></header>
@@ -21,19 +23,27 @@
         </section>
     </div>
 
-<footer>
-    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
-</footer>
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    fetch('header.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('header-container').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error fetching header content:', error);
-        });
-</script>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+              
+                document.getElementById('header-container').innerHTML = '<p>Header content could not be loaded.</p>';
+            });
+    </script>
 </body>
 </html>
