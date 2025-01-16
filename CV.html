@@ -14,7 +14,9 @@
     <main class="container">
         <h1>Curriculum Vitae</h1>
         <p>
-            You can download my CV <a href="CV.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view it below:
+            You can download my CV 
+            <a href="CV.pdf" target="_blank" rel="noopener noreferrer">here</a>, 
+            or view it below:
         </p>
 
         <iframe 
@@ -25,5 +27,22 @@
             title="Beatriz Gietner's CV">
         </iframe>
     </main>
+
+    <script>
+        // Dynamically load the header
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not OK');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    </script>
 </body>
 </html>
