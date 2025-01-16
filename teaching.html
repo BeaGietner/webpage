@@ -21,19 +21,16 @@
             <li><strong>Spring 2023/24</strong> - ECON30530 - Advanced Econometrics: Microeconometrics (TA for Dr. Nora Strecker).</li>
         </ul>
     </div>
-<footer>
-    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
-</footer>
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    fetch('header.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('header-container').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error fetching header content:', error);
-        });
-</script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching header content:', error);
+            });
+    </script>
 </body>
 </html>
+
