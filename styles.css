@@ -151,6 +151,29 @@ h2 {
   text-decoration: underline;
 }
 
+#contact .contact-links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #343434;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+}
+
+#contact .contact-links a:hover {
+    text-decoration: underline;
+}
+
+#contact .contact-links i {
+    font-size: 24px;
+    color: #343434;
+    transition: color 0.3s ease;
+}
+
+#contact .contact-links a:hover i {
+    color: #666;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -166,6 +189,23 @@ h2 {
 .social-icons a:hover {
   color: #343434;
 }
+
+#contact .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#contact .social-icons a {
+  margin: 0 10px;
+  color: #666666;
+  font-size: 20px;
+}
+
+#contact .social-icons a:hover {
+  color: #343434;
+}
+
 
 footer {
   background-color: white;
