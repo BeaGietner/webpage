@@ -71,13 +71,17 @@ nav a:hover {
 }
 
 .container {
-  padding: 20px 20px 0 20px;  /* Top Right Bottom Left */
+  padding: 20px;  /* Back to even padding */
   max-width: 900px;
   margin: 20px auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
   border: 1px solid #d3d3d3;
+}
+
+.section:last-child {
+  margin-bottom: 20px;  /* Instead of 0, give it some breathing room */
 }
 
 .container a {
@@ -327,7 +331,4 @@ a:hover {
   text-decoration: underline;
 }
 
-.section:last-child {
-  margin-bottom: 0;
-}
 
