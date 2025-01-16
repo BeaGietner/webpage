@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header id="header-container"></header>
+    <header id="header-container"></header>
 
 <main class="container">
     <h1>Blog</h1>
@@ -46,7 +46,24 @@
             </div>
         </article>
     </div>
-</main>
 
+    </main>
+
+    <script>
+        // Dynamically load the header
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not OK');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    </script>
 </body>
 </html>
