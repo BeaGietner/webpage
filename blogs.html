@@ -9,7 +9,6 @@
 </head>
 <body>
 <header id="header-container"></header>
-
 <div class="container">
     <section id="blogs" class="section">
         <h3>Blogs</h3>
@@ -26,7 +25,6 @@
             <li><a href="https://scholars-stage.org/" target="_blank">The Scholar's Stage, by Tanner Greer (China-related)</a></li>
         </ul>
     </section>
-
     <section id="newsletters" class="section">
         <h3>Newsletters (Mostly Econ/Science/Tech Related)</h3>
         <ul>
@@ -43,12 +41,7 @@
         </ul>
     </section>
 </div>
-
-<footer>
-    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
-</footer>
 <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
