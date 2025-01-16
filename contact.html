@@ -13,11 +13,7 @@
     <h3>Contact</h3>
     <p>I am a chronically online person, so you can email me at <a href="mailto:b.gietner@gmail.com">b.gietner@gmail.com</a> at anytime, and I will reply to you straight way (unless it is about a subject that requires a lot of thinking). You can also send me a tweet <a href="https://x.com/BeatrizGietner" target="_blank" rel="noopener noreferrer">here</a>. Additionally, you can message me on Slack <a href="https://app.slack.com/client/T077UCRJ068/C077K9K8P38" target="_blank" rel="noopener noreferrer">here</a>.</p>
 </div>
-<footer>
-    <p>&copy; <span id="current-year"></span> Beatriz Gietner. All rights reserved.</p>
-</footer>
 <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
