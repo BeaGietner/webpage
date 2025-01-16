@@ -54,6 +54,23 @@
                 <a href="https://newcms.kmu.ac.kr/dext5editordata/2022/12/20221215_110549903_83633.pdf" target="_blank" rel="noopener noreferrer">here</a>.
             </p>
         </section>
-    </main>
+ </main>
+
+    <script>
+        // Dynamically load the header
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not OK');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    </script>
 </body>
 </html>
