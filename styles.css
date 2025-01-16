@@ -344,4 +344,26 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Your existing styles here */
 
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 150px;  /* Smaller image for mobile */
+  }
+
+  .contact-links a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Add other mobile-specific styles */
+}
