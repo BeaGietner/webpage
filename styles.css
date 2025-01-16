@@ -81,8 +81,9 @@ nav a:hover {
 }
 
 .section:last-child {
-  margin-bottom: 20px;  /* Instead of 0, give it some breathing room */
+    margin-bottom: 20px;  /* Add some breathing room at the bottom */
 }
+
 
 .container a {
   color: #8b0000;
@@ -142,6 +143,7 @@ h2 {
   font-family: 'EB Garamond', serif;
 }
 
+
 .contact-links a {
   display: inline-block;
   margin-right: 20px;
@@ -158,10 +160,12 @@ h2 {
 #contact .contact-links a {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 10px;  /* Add some vertical spacing between links if they wrap */
     color: #343434;
     text-decoration: none;
     font-weight: 500;
     font-family: 'EB Garamond', serif;
+    padding: 5px 0;  /* Add some vertical padding to make links more clickable */
 }
 
 #contact .contact-links a:hover {
@@ -174,8 +178,17 @@ h2 {
     transition: color 0.3s ease;
 }
 
+#contact .contact-links {
+    margin-bottom: 20px;  /* Add some bottom margin to the links container */
+}
+
+
 #contact .contact-links a:hover i {
     color: #666;
+}
+
+#contact h2 {
+    margin-bottom: 20px;  /* Increase space between heading and links */
 }
 
 .social-icons {
