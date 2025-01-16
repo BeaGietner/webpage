@@ -72,6 +72,16 @@
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                 </a>
+
+                <a href="https://bsky.app/profile/beatrizgietner.bsky.social" target="_blank" aria-label="BlueSky" class="icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"></svg>
+</a>
+
+                <!-- Slack -->
+<a href="https://join.slack.com/t/ucdconnect-axa1053/shared_invite/zt-2kp0k670y-8dY9i85UVnsKv~7PKA1mYQ" target="_blank" aria-label="Slack">
+    <i class="fa-brands fa-slack"></i>
+</a>
+                
                 <a href="https://diddigest.substack.com/" target="_blank" aria-label="Substack">
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                         <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
@@ -82,9 +92,13 @@
     </div>
 
     <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
         fetch('header.html')
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not OK');
+                }
+                return response.text();
+            })
             .then(html => {
                 document.getElementById('header-container').innerHTML = html;
             })
@@ -94,4 +108,3 @@
     </script>
 </body>
 </html>
-
