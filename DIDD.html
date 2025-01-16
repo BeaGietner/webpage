@@ -23,5 +23,22 @@
             You can check it out (and subscribe) <a href="https://diddigest.substack.com/" target="_blank" rel="noopener noreferrer" class="btn">here</a>.
         </p>
     </main>
+
+    <script>
+        // Dynamically load the header
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not OK');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    </script>
 </body>
 </html>
