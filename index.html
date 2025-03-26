@@ -6,13 +6,24 @@
     <title>Beatriz Gietner - Academic Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this style to indicate the image is clickable */
+        .profile img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile img:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body>
     <header id="header-container"></header>
 
     <div class="container">
         <section id="about" class="section profile">
-            <img src="headshot.jpeg" alt="Beatriz Gietner">
+            <img id="profilePic" src="headshot.jpeg" alt="Beatriz Gietner" onclick="toggleProfileImage()">
             <div class="profile-details">
                 <h2>Beatriz Gietner</h2>
                 <p>Ph.D. Candidate in Economics</p>
@@ -64,6 +75,7 @@
     </div>
 
     <script>
+        // Function to load header
         fetch('header.html')
             .then(response => {
                 if (!response.ok) {
@@ -77,6 +89,21 @@
             .catch(error => {
                 console.error('Error fetching header content:', error);
             });
+            
+        // Function to toggle profile image
+        let isFirstImage = true;
+        
+        function toggleProfileImage() {
+            const profilePic = document.getElementById('profilePic');
+            
+            if (isFirstImage) {
+                profilePic.src = "C2BEBD62-23E2-4727-8782-05BCDCEC1A07.png";
+            } else {
+                profilePic.src = "headshot.jpeg";
+            }
+            
+            isFirstImage = !isFirstImage;
+        }
     </script>
 </body>
 </html>
