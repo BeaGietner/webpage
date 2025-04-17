@@ -365,5 +365,23 @@ a:hover {
   /* Add other mobile-specific styles */
 
 
+  .submit-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #8b0000; /* Matching your link color */
+    color: white;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border: 1px solid #8b0000;
+}
+
+.submit-button:hover {
+    background-color: #a52a2a; /* Slightly lighter on hover */
+    text-decoration: none;
+}
 }
 
