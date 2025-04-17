@@ -365,23 +365,35 @@ a:hover {
   /* Add other mobile-specific styles */
 
 
-  .submit-button {
+.submit-button {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: #8b0000; /* Matching your link color */
-    color: white;
+    padding: 12px 20px;  /* Increased padding for better touch target */
+    background-color: #8b0000;
+    color: white !important;  /* Important to override any potential inheritance issues */
     text-decoration: none;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;  /* Added bottom margin */
     transition: background-color 0.3s;
     border: 1px solid #8b0000;
+    text-align: center;
+    min-width: 140px;  /* Minimum width to ensure text is visible */
+    font-size: 18px;  /* Increased font size for better visibility on mobile */
 }
 
 .submit-button:hover {
-    background-color: #a52a2a; /* Slightly lighter on hover */
+    background-color: #a52a2a;
     text-decoration: none;
 }
-}
 
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    .submit-button {
+        display: block;
+        width: 80%;  /* Take most of the available width on mobile */
+        margin: 15px auto;  /* Center the button */
+        padding: 14px 20px;  /* Even larger touch target on mobile */
+    }
+}
