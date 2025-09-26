@@ -397,3 +397,15 @@ a:hover {
         padding: 14px 20px;  /* Even larger touch target on mobile */
     }
 }
+
+  .blog-post figure {
+  max-width: 400px;
+  margin: 1em auto;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
