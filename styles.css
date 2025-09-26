@@ -388,24 +388,23 @@ a:hover {
     text-decoration: none;
 }
 
-/* Mobile-specific adjustments */
-@media screen and (max-width: 768px) {
-    .submit-button {
-        display: block;
-        width: 80%;  /* Take most of the available width on mobile */
-        margin: 15px auto;  /* Center the button */
-        padding: 14px 20px;  /* Even larger touch target on mobile */
-    }
-}
-
-  .blog-post figure {
-  max-width: 400px;
-  margin: 1em auto;
+/* Base styling for all blog images (desktop and general view) */
+.blog-post figure {
+  max-width: 600px;   /* larger images on desktop */
+  margin: 1.5em auto; /* centered */
 }
 
 .blog-post img {
   width: 100%;
   height: auto;
   border-radius: 6px;
+  display: block;
 }
 
+/* Mobile overrides */
+@media screen and (max-width: 768px) {
+  .blog-post figure {
+    max-width: 100%;  /* take full width on small screens */
+    margin: 1em auto;
+  }
+}
